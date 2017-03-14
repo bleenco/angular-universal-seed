@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "exclude": [
+    "./main.server.aot.ts"
+  ],
+  "angularCompilerOptions": {
+    "excludes": [],
+    "entryModule": "./app/browser-app.module#BrowserAppModule"
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "silent": true
+  }
+}
