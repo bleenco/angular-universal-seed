@@ -20,14 +20,14 @@ app.engine('html', universalExpressEngine({
 }));
 
 app.set('view engine', 'html');
-app.set('views', 'src');
+app.set('views', 'dist');
 
 app.use('/', express.static('dist', { index: false }));
 
 ROUTES.forEach(route => {
   app.get(route, (req, res) => {
     console.time(`GET: ${ req.originalUrl }`);
-    res.render('../dist/index', {
+    res.render('index', {
       req: req,
       res: res
     });

@@ -15,8 +15,8 @@ npm start
 # Production Build
 npm run build:prod
 
-# Run Server
-node dist/server.js
+# Run Prerendering Express Server
+npm run server
 ```
 
 ### Licence

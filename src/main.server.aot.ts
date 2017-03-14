@@ -19,7 +19,7 @@ app.engine('html', universalExpressEngine({
 }));
 
 app.set('view engine', 'html');
-app.set('views', 'src');
+app.set('views', 'dist');
 
 app.use('/', express.static('dist', { index: false }));
 
