@@ -45,7 +45,6 @@ module.exports = function (options, webpackOptions) {
   if (options.serve) {
     if (!options.aot) {
       config.module.rules.shift();
-      config.plugins.shift();
       config = webpackMerge({}, config, devPartial);
     }
 
