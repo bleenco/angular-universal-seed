@@ -12,10 +12,13 @@
 # Development
 npm start
 
+# AoT Development
+npm run start:aot
+
 # Production Build
 npm run build:prod
 
-# Run Prerendering Express Server
+# Run Universal Express Server
 npm run server
 ```
 
