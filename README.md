@@ -6,20 +6,44 @@
 
 ---
 
-### Commands
+Angular Webpack Seed and built-in `express` server with server side prerendering using `renderModuleFactory()`.
+
+It uses `@ngtools/webpack` lib which provides full AoT support, also incremential builds for development purposes.
+
+This seed also includes SASS/SCSS support.
+
+### Development
+
+Start development builds and `webpack-dev-server` using `JiT`
 
 ```sh
-# Development
 npm start
+```
 
-# AoT Development
+Development builds with `AoT`
+
+```sh
 npm run start:aot
+```
 
-# Production Build
+Server Side builds
+
+```sh
+npm run build:server
+```
+
+### Production
+
+Build both client and server side bundles and get ready for production (AoT)
+
+```sh
 npm run build:prod
+```
 
-# Run Universal Express Server
-npm run server
+Start the server
+
+```sh
+npm run server # or node ./dist/server.js
 ```
 
 ### Licence
