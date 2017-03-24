@@ -32,6 +32,15 @@ Server Side builds
 npm run build:server
 ```
 
+### Watch Mode
+
+```sh
+npm run dev # wait to finish
+
+npm run watch # watch on ./dist/server.js
+```
+
+
 ### Production
 
 Build both client and server side bundles and get ready for production (AoT)

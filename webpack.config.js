@@ -22,7 +22,7 @@ module.exports = function (options, webpackOptions) {
     plugins: [
       getAotPlugin('server', !!options.aot)
     ]
-  }, getDevStylesConfig());
+  }, getProdStylesConfig());
 
   let clientConfig = webpackMerge({}, commonPartial, clientPartial, {
     plugins: [

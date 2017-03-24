@@ -14,7 +14,9 @@
     "prebuild": "npm run clean",
     "prebuild:prod": "npm run clean",
     "clean": "rimraf dist",
-    "server": "node dist/server.js"
+    "server": "node dist/server.js",
+    "dev": "webpack --env.client --progress --hide-modules --watch & webpack --env.server --progress --hide-modules --watch",
+    "watch": "nodemon ./dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -64,6 +66,7 @@
     "html-webpack-plugin": "^2.28.0",
     "ng-router-loader": "^2.1.0",
     "node-sass": "^4.5.1",
+    "nodemon": "^1.11.0",
     "portfinder": "^1.0.13",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.1",
