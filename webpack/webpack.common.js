@@ -2,7 +2,6 @@ const { root } = require('./helpers');
 const copy = require('copy-webpack-plugin');
 
 module.exports = {
-  devtool: 'source-map',
   resolve: {
     extensions: ['.ts', '.js']
   },

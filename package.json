@@ -7,7 +7,7 @@
     "start:aot": "webpack-dev-server --env.client --env.serve --env.aot --progress",
     "build:client": "webpack --env.client --env.aot --progress --hide-modules",
     "build:client:prod": "webpack --env.client --env.aot -p --progress --hide-modules",
-    "build:server": "webpack --env.server --env.aot --progress --hide-modules",
+    "build:server": "webpack --env.server --progress --hide-modules",
     "build:server:prod": "webpack --env.server --env.aot -p --progress --hide-modules",
     "build": "npm run build:client && npm run build:server",
     "build:prod": "npm run build:client:prod && npm run build:server:prod",
@@ -15,7 +15,8 @@
     "prebuild:prod": "npm run clean",
     "clean": "rimraf dist",
     "server": "node dist/server.js",
-    "dev": "webpack --env.client --progress --hide-modules --watch & webpack --env.server --progress --hide-modules --watch",
+    "dev": "webpack --env.client --progress & webpack --env.server --progress --hide-modules --watch",
+    "dev:aot": "webpack --env.client --env.aot --progress --hide-modules --watch & webpack --env.server --env.aot --progress --hide-modules --watch",
     "watch": "nodemon ./dist/server.js"
   },
   "repository": {
@@ -79,6 +80,7 @@
     "webpack": "^2.3.1",
     "webpack-dev-server": "^2.4.2",
     "webpack-dll-bundles-plugin": "^1.0.0-beta.5",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "webpack-node-externals": "^1.5.4"
   }
 }
