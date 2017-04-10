@@ -5,25 +5,21 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { HomeViewComponent } from './home/home-view.component';
-import { TransferHttpModule } from '@angularclass/universal-transfer-state/browser';
-
+import { AppHomeComponent } from './components/app-home';
 
 @NgModule({
   imports: [
     CommonModule,
-    HttpModule,
     FormsModule,
-    TransferHttpModule,
     RouterModule.forRoot([
-      { path: '', component: HomeViewComponent, pathMatch: 'full'},
-      { path: 'lazy', loadChildren: './+lazy/lazy.module#LazyModule'}
+      { path: '', component: AppHomeComponent, pathMatch: 'full'},
+      { path: 'lazy', loadChildren: './components/+lazy/lazy.module#LazyModule' }
     ])
   ],
   providers: [
-    { provide: APP_BASE_HREF, useValue: '/'}
+    { provide: APP_BASE_HREF, useValue: '/' }
   ],
-  declarations: [ AppComponent, HomeViewComponent ],
+  declarations: [ AppComponent, AppHomeComponent ],
   exports: [ AppComponent ]
 })
 export class AppModule {}
