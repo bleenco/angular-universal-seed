@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/bleenco/angular-webpack-seed#readme",
   "dependencies": {
-    "@angular/animations": "4.0.0",
+    "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",
