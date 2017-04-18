@@ -17,7 +17,8 @@
     "server": "node dist/server.js",
     "dev": "webpack --env.client --progress & webpack --env.server --progress --hide-modules --watch",
     "dev:aot": "webpack --env.client --env.aot --progress --hide-modules --watch & webpack --env.server --env.aot --progress --hide-modules --watch",
-    "watch": "nodemon ./dist/server.js"
+    "watch": "nodemon ./dist/server.js",
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
