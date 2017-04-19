@@ -1,7 +1,6 @@
 {
   "name": "@bleenco/angular-webpack-seed",
-  "version": "0.2.0",
-  "main": "index.js",
+  "version": "0.3.0",
   "scripts": {
     "start": "webpack-dev-server --env.client --env.serve --progress",
     "start:aot": "webpack-dev-server --env.client --env.serve --env.aot --progress",
