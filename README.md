@@ -86,6 +86,20 @@ Start the server
 npm run server # or node ./dist/server.js
 ```
 
+#### Tests
+
+Running End-to-End tests
+
+```sh
+npm run e2e
+```
+
+Unit tests
+
+```sh
+npm test
+```
+
 ### Licence
 
 MIT
