@@ -18,7 +18,13 @@
     "dev": "webpack --env.client --progress & webpack --env.server --progress --hide-modules --watch",
     "dev:aot": "webpack --env.client --env.aot --progress --hide-modules --watch & webpack --env.server --env.aot --progress --hide-modules --watch",
     "watch": "nodemon ./dist/server.js",
-    "test": "karma start"
+    "test": "karma start",
+    "e2e:live": "npm run e2e -- --elementExplorer",
+    "e2e": "protractor ./protractor.conf.js",
+    "pree2e": "npm run webdriver:update -- --standalone",
+    "webdriver-manager": "webdriver-manager",
+    "webdriver:start": "npm run webdriver-manager start",
+    "webdriver:update": "npm run webdriver-manager update"
   },
   "repository": {
     "type": "git",
@@ -66,6 +72,7 @@
     "file-loader": "^0.11.1",
     "html-webpack-plugin": "^2.28.0",
     "jasmine": "^2.5.3",
+    "jasmine-spec-reporter": "^4.0.0",
     "karma": "^1.6.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.1.0",
@@ -75,6 +82,7 @@
     "node-sass": "^4.5.2",
     "nodemon": "^1.11.0",
     "portfinder": "^1.0.13",
+    "protractor": "^5.1.1",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.1",
     "sass-loader": "^6.0.3",
@@ -82,6 +90,7 @@
     "source-map-loader": "^0.2.1",
     "style-loader": "^0.16.1",
     "to-string-loader": "^1.1.5",
+    "ts-node": "^3.0.2",
     "tslint": "^4.0.0",
     "typescript": "^2.2.2",
     "webpack": "^2.4.1",
