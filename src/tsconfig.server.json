@@ -10,5 +10,8 @@
     "excludes": [],
     "genDir": "ngfactory",
     "entryModule": "./app/server-app.module#ServerAppModule"
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "silent": true
   }
 }
