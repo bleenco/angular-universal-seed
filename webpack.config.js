@@ -56,7 +56,18 @@ module.exports = function (options, webpackOptions) {
   } else if (options.server) {
     config = webpackMerge({}, config, {
       output: { filename: 'server.js' },
-      target: 'node'
+      target: 'node',
+      stats: {
+        warnings: false
+      },
+      node: {
+        console: false,
+        global: false,
+        process: false,
+        Buffer: false,
+        __filename: false,
+        __dirname: false
+      }
     });
   }
 
