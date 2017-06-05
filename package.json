@@ -1,6 +1,6 @@
 {
   "name": "@bleenco/angular-webpack-seed",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "scripts": {
     "start": "webpack-dev-server --env.client --env.serve --progress",
     "start:aot": "webpack-dev-server --env.client --env.serve --env.aot --progress",
@@ -14,8 +14,8 @@
     "prebuild:prod": "npm run clean",
     "clean": "rimraf dist",
     "server": "node dist/server.js",
-    "dev": "webpack --env.client --progress & webpack --env.server --progress --hide-modules --watch",
-    "dev:aot": "webpack --env.client --env.aot --progress --hide-modules --watch & webpack --env.server --env.aot --progress --hide-modules --watch",
+    "dev": "webpack --env.server --progress --hide-modules --watch & webpack-dev-server --env.client --env.serve --progress",
+    "dev:aot": "webpack --env.aot --env.server --progress --hide-modules --watch & webpack-dev-server --env.aot --env.client --env.serve --progress",
     "watch": "nodemon ./dist/server.js",
     "test": "karma start",
     "e2e:live": "npm run e2e -- --elementExplorer",
