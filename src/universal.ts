@@ -66,7 +66,7 @@ function getDocument(filePath: string): string {
   return templateCache[filePath] = templateCache[filePath] || fs.readFileSync(filePath).toString();
 }
 
-function handleModuleRef(moduleRef: NgModuleRef<{}>, callback: express.Send, setupOptions: UniversalSetupOptions) {
+function handleModuleRef(moduleRef: NgModuleRef<{}>, callback: any, setupOptions: UniversalSetupOptions) {
   const state = moduleRef.injector.get(PlatformState);
   const appRef = moduleRef.injector.get(ApplicationRef);
 
