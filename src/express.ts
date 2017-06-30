@@ -1,5 +1,4 @@
 import * as express from 'express';
-import { platformServer, renderModuleFactory } from '@angular/platform-server';
 import { universalExpressEngine } from './universal';
 import { resolve } from 'path';
 import { routes } from './app/app.module';

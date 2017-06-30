@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { ServerModule } from '@angular/platform-server';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
-import { UniversalOnInit } from '../universal';
 import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
@@ -15,6 +14,4 @@ import { BrowserModule } from '@angular/platform-browser';
     AppModule
   ]
 })
-export class ServerAppModule implements UniversalOnInit {
-  universalOnInit() { }
-}
+export class ServerAppModule { }
