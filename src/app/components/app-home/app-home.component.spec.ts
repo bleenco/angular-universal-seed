@@ -4,7 +4,6 @@ import {
   TestBed,
   ComponentFixture
 } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms';
 
 import { AppHomeComponent } from './app-home.component';
 
@@ -14,8 +13,7 @@ describe(`App`, () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppHomeComponent ],
-      imports: [ FormsModule ]
+      declarations: [ AppHomeComponent ]
     })
     .compileComponents();
   }));

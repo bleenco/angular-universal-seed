@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "./ngfactory",
+    "entryModule": "./app/app.module#AppModule"
+  }
+}

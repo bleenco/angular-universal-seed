@@ -1,10 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import 'rxjs/add/operator/first';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: 'app-home.component.html'
+  templateUrl: 'app-home.component.html',
+  styleUrls: ['app-home.component.sass']
 })
-export class AppHomeComponent {
-  value: string;
-}
+export class AppHomeComponent { }
